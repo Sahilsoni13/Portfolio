@@ -1,38 +1,423 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+.img-hover:hover{
+  scale: 1.2;
+  transition: 0.5s ease;
+}
+.hover-me{
+  padding: 10px;
+  border: 2px solid transparent;
+  border-radius: 50px;
+} 
+html{
+  scroll-behavior:smooth;
+}
+.hover-me:hover{
+border-color: #ffffff;
+}
+body{
+  font-family: 'Nunito', sans-serif;
+  color: #ffffff !important;
+  background-color: #263849;
+}
+.heading{
   text-align: center;
+  font-size: 23px;
+}
+.navigation{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  backdrop-filter: blur(20px);
+}
+.container {
+  max-width: 1432px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.nav-main{
+  display: flex;
+  justify-content: space-between;
+}
+.navbar{
+  display: flex;
+  justify-content: end;
+  padding: 20px 0;
+  align-items: center;
+  width: 100%;
+  width: 80%;
+  
+}
+.menu-icon{
+  max-width: 30px;
+  width: 100%;
+  padding: 22px 0;
+  cursor: pointer;
+  display: none;
+
+}
+.navleft h1{
+  padding: 20px 0;
+  font-size: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navright{
+  max-width: 700px;
+  width: 100%;
+}
+.navright ul{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  max-width: 700px;
+  width: 100%;
+}
+.navright ul li a{
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+.nav-hide{
+  top: 0;
+  right: -100%;
+
+}
+.navright ul li a:hover{
+  border-color:  #ffffff;;
+  transition: 0.8s;
+}
+/* banner section */
+.banner{
+padding: 150px 0;
+}
+.banner-main{
+  display: flex;
+}
+.leftside{
+  max-width: 50%;
+  width: 100%;
+}
+.leftside h1{
+  font-size: 70px;
+  margin: 10px 5px;
+}
+.leftside p{
+  font-size: 20px;
+  margin: 10px 5px;
+  max-width: 80%;
+}
+.leftside h2{
+  font-size: 15px;
+}
+.location{
+  display: flex;
+  margin: 30px 5px;
+  align-items: center;
+  max-width: 160px;
+  justify-content: space-between;
+}
+.location h4{
+  font-size: 15px;
+}
+.location img{
+  max-width: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.contact-logos{
+  max-width: 150px;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 5px;
+}
+.contact-logos img{
+  max-width: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.rightside img{
+  max-width: 620px;
+}
+
+.rightside{
+  overflow: hidden;
+  max-width: 50%;
+  width: 100%;
+}
+/* about me */
+.about{
+  padding: 0 0 150px 0;
+}
+.about-content{
+  display: flex;
+  justify-content: space-between;
+}
+.about-left img{
+  max-width: 600px;
+}
+.about-left{
+  overflow: hidden;
+  max-width: 50%;
+  width: 100%;
+}
+.about-head{
+  text-align: center;
+  display: flex;
+  justify-content: center
+}
+.about-head h1{
+  margin-bottom: 50px;
+}
+.about-right{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 15px;
+  max-width: 50%;
+  row-gap: 20px;
+}
+.about-right h1{
+  font-size: 25px;
+  margin: 0 0 20px 0;
+}
+.about-right p{
+  font-size: 20px;
+}
+.about-right ul{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 5px;
+}
+.about ul li{
+  list-style: none;
+  border: 2px solid #ffffff;
+  padding: 5px;
+}
+.about-p{
+  text-align: center;
+  font-size: 20px;
+  padding: 30px 0;
+}
+/* skill section */
+.skillsection{
+  padding: 0 0 150px 0 ;
+}
+
+.skills-logos{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  text-align: center;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  gap: 40px;
+}
+.skills-names img{
+  max-width: 80px;
+  width: 100%;
+}
+.skill-heading {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+.skill-heading h3{
+  padding: 30px 0;
+}
+/* contact me */
+.contactme img{
+  max-width: 40px;
+}
+.contactme{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 50px 0;
+}
+.contactme h2{
+  display: flex;
+  align-items: center;
+  max-width: 550px;
+  width: 100%;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.platforms{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.platforms h3{
+  margin: 10px 5px;
+}
+.platforms p{
+  max-width: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.platforms p img{
+  max-width: 50px;
+  width: 100%;
+}
+.contact-main h3{
+margin: 30px 0;
+}
+footer {
+  text-align: center;
+  padding: 30px 0;
+}
+
+/* responsive design */
+@media screen and (max-width:991px) {
+  .heading{
+    font-size: 15px;
+  }
+  /* navbar */
+  .navbar ul li a{
+  font-size: 12px;
+  }
+  .navbar ul {
+   justify-content: space-evenly;
+  }
+  /* banner section */
+
+  .leftside h1{
+    font-size: 40px;
+  }
+  .leftside p{
+    font-size: 15px;
+  }
+  .location h4{
+    font-size: 14px;
+  }
+
+  .about-right h1{
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  .about-right p{
+    font-size: 15px;
+  }
+ 
+
+  /* about section */
+  .about-left img{
+    max-width: 500px;
+  }
+  .about-right ul {
+    grid-template-columns: repeat(3,1fr);
+}
+.about-right ul li {
+  font-size: 10px;
+}
+.about-main{
+flex-direction: column;
+}
+}
+@media screen and (max-width:800px) {
+  .navright{
+    max-width: 400px;
+  }
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    }
+    .about-main{
+      flex-direction: column;
+      }
+      .banner-main{
+        flex-direction: column;
+      }
+    .about-left img{
+      max-width: 600px;
+    }
+    .about-left {
+      max-width: 600px;
+    }
+    .about-right{
+      max-width: 100%;
+      align-items: center;
+    }
+    .rightside{
+      max-width: 600px;
+    }
+    .leftside{
+    max-width: 600px;
+  }
+    .banner-main{
+      flex-direction: column;
+      align-items: center;
+    }
+    .skills-names img {
+      max-width: 50px;
+  }
+  .contactme h2{
+    max-width: 300px;
+    font-size: 15px;
+  }
+  .contactme h2 img{
+    max-width: 20px;
+  }
+}
+@media screen and (max-width:650px) {
+  .contact-main h2{
+    font-size: 16px;
+  }
+  .skills-logos{
+    grid-template-columns: repeat(3,1fr);
+  }
+  .leftside p{
+    max-width: 100%;
+  }
+  .navbar ul{
+    flex-direction: column;
+    text-align: center;
+    /* position:fixed;
+    top: 0;
+    right: -100%; */
+  }
+
+  .navbar ul li{
+    padding: 10px 15px;
+  }
+  footer{
+    font-size: 12px;
+  }
+  .about-right ul {
+    grid-template-columns: repeat(2,1fr);
+}
+.menu-icon{
+  display: block;
+}
+.nav-main{
+  flex-direction: column;
+}
+.navleft{
+  display: flex;
+  justify-content: space-between;
+}
+.navbar{
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  max-width: 50%;
+  width: 100%;
+  position: absolute;
+  top: 95px;
+  right: -100%;
+  background-color: #263849;
+  transition: 0.5s ease;
 }
-
-.App-link {
-  color: #61dafb;
+.test{
+  right: 0;
+  transition: 0.5s ease;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

@@ -1,0 +1,34 @@
+[
+    {
+        "skill-img":"html5.png",
+        "skill-tittle":"Html"
+    },
+    {
+        "skill-img":"css3.png",
+        "skill-tittle":"Css"
+    },
+    {
+        "skill-img":"javascript.png",
+        "skill-tittle":"Javascript"
+    },
+    {
+        "skill-img":"mysql.png",
+        "skill-tittle":"Mysql"
+    },
+    {
+        "skill-img":"reactlogo.png",
+        "skill-tittle":"React js"
+    },
+    {
+        "skill-img":"nodejs.png",
+        "skill-tittle":"Node js"
+    },
+    {
+        "skill-img":"github.png",
+        "skill-tittle":"Github"
+    },
+    {
+        "skill-img":"figma.png",
+        "skill-tittle":"Figma"
+    }
+]
